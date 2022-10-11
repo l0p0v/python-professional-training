@@ -14,9 +14,10 @@ www.eia.ai
 # Crie uma função de teste parametrizado que teste a função pelo menos 5 vezes.
 
 from Primeiroultimo import primeiroultimo
+
 print(primeiroultimo("Ana da Silva Rosa"))
 
-!pytest -v
+!pytest - v
 
 # 2. Crie uma função que receba um nome completo e retorne a abreviatura, 
 # contendo a primeira letra de cada nome em maísculo. Por exemplo: Ana Rosa 
@@ -24,7 +25,9 @@ print(primeiroultimo("Ana da Silva Rosa"))
 # pelo menos 5 vezes e aborte caso ocorra mais de 2 erros.
 
 from abreviatura import abreviatura
+
 print(abreviatura("Marcio antonio Silva"))
 
-!pytest -k test_abreviatura -v --maxfail 2
-
+!pytest - k
+test_abreviatura - v - -maxfail
+2

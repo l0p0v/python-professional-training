@@ -7,13 +7,13 @@ Prof. Fernando Amaral
 
 www.eia.ai
 
-# Fundamentos
+# 2.Fundamentos
 ## Comentários
 """
 
 # isto é um comentário
 # isto é outro comentário
-print("olá mundo") # isto é um comentário
+print("olá mundo")  # isto é um comentário
 
 ''' Este é um comentário
 o comentário continua aqui
@@ -28,34 +28,34 @@ print("Maça", 20, 30.45)
 
 print("Maça", "Pera", "Uva", sep=' - ')
 
-print("Maça","Pera", end = ' Fim', sep=' ')
+print("Maça", "Pera", end=' Fim', sep=' ')
 
 print("Este é um texto longo, \n eu quero quebrar a linha")
 
-print("Maça","Pera", sep='\n')
+print("Maça", "Pera", sep='\n')
 
-print("A pontuação total de %s foi %s pontos" % ("Fernando","10") )
+print("A pontuação total de %s foi %s pontos" % ("Fernando", "10"))
 
-print("A pontuação total de {} foi {} pontos".format("Fernando","10"))
+print("A pontuação total de {} foi {} pontos".format("Fernando", "10"))
 
 print("A pontuação total de" + " Fernando" + " foi" + " 10 " + "pontos")
 
-#1 - Realize o print do seu nome completo, sua idade e sua 
+# 1 - Realize o print do seu nome completo, sua idade e sua
 # altura utilizando um print para cada valor.
 
 print("Fernando")
 print("30")
 print("1,92")
 
-#2 - Realize o print do seu nome completo, sua idade e sua altura 
+# 2 - Realize o print do seu nome completo, sua idade e sua altura
 # utilizando apenas um print para todos valores.
 
 print("Nome: {}, idade:{}, altura:{}".format("Fernando", "30", "1,90"))
 
-#3 - Realize o print de 3 números de sua escolha em um mesmo print, 
+# 3 - Realize o print de 3 números de sua escolha em um mesmo print,
 # mas separados pelo caracter '-'.
 
-print(1,2,3, sep="-")
+print(1, 2, 3, sep="-")
 
 """# Variáveis"""
 
@@ -107,8 +107,8 @@ saldoBancario = 100
 SaldoBancario = 100
 saldo_bancario = 100
 
-#1 - Crie uma variável de cada tipo e ponha alguma valor escolhido. 
-#Em seguida, printe todos esses valores.
+# 1 - Crie uma variável de cada tipo e ponha alguma valor escolhido.
+# Em seguida, printe todos esses valores.
 
 inteiro = 750
 decimal = 3.1415
@@ -119,7 +119,7 @@ print(decimal)
 print(text)
 print(booleano)
 
-#2 - Crie variáveis para guardar seu nome, CPF e uma que indique 
+# 2 - Crie variáveis para guardar seu nome, CPF e uma que indique
 # se você esta casado, em seguida printe esses valores separadamente, 
 # mas não esqueça de printar junto o que eles significam.
 
@@ -193,7 +193,7 @@ print(numero)
 outro_numero = 30 + numero
 print(outro_numero)
 
-numero = 20 -10
+numero = 20 - 10
 print(numero)
 
 numero = 10 * 2
@@ -466,23 +466,23 @@ print("ou ainda, você escolheu: %i " % (valor_inteiro))
 
 num1 = input("Insira o primeiro número: ")
 num2 = input("Insira o segundo número: ")
-divisao =  float(num1) / float(num2)
-print("%s dividido por %s é %.2f" % (num1, num2, divisao) )
+divisao = float(num1) / float(num2)
+print("%s dividido por %s é %.2f" % (num1, num2, divisao))
 
 # 2 - Crie um programa que mostre o dia, mês, ano, hora, 
 # minuto e segundos inseridos pelo usuário. Formate o valor.
 
 dia = input("Insira o dia: ")
- mes = input("Insira o mês: ")
- ano = input("Insira o ano: ")
- hora = input("Insira a hora: ")
- minuto = input("Insira o minuto: ")
- segundo = input("Insira o segundo: ")
- print("%s/%s/%s %s:%s:%s" % (dia, mes, ano, hora, minuto, segundo))
+mes = input("Insira o mês: ")
+ano = input("Insira o ano: ")
+hora = input("Insira a hora: ")
+minuto = input("Insira o minuto: ")
+segundo = input("Insira o segundo: ")
+print("%s/%s/%s %s:%s:%s" % (dia, mes, ano, hora, minuto, segundo))
 
 """# Operadores de Atribuição e Combinação de Operadores Lógicos"""
 
-numero = 1 
+numero = 1
 numero = numero + 1
 print(numero)
 
@@ -490,11 +490,11 @@ numero = 1
 numero += 1
 print(numero)
 
-numero = 10 
+numero = 10
 numero = numero / 2
 print(numero)
 
-numero = 10 
+numero = 10
 numero /= 2
 print(numero)
 
@@ -517,10 +517,10 @@ e_maior = num1 <= num2
 print(e_maior)
 
 num = 11
-boolean = num > 0 and num < 10 
+boolean = num > 0 and num < 10
 print(boolean)
 
-#ver. se é tipo float e igual a 10.1. ou 20.2
+# ver. se é tipo float e igual a 10.1. ou 20.2
 num = 10.1
 boolean = type(num) == float and (num == 10.1 or num == 20.2)
 print(boolean)
@@ -533,7 +533,7 @@ media_input = input("Digite sua média nas provas: ")
 exame_input = input("Digite sua nota no exame: ")
 media_prova = int(media_input)
 nota_exame = int(exame_input)
-aprovado = (media_prova >=7) or (nota_exame >= 5)
+aprovado = (media_prova >= 7) or (nota_exame >= 5)
 print("Aprovação: ", aprovado)
 
 # 2 - Crie  um programa que diga se a senha esta correta e portanto você tem 
@@ -566,7 +566,7 @@ print(texto[1])
 
 texto = "exemplo"
 print(texto[1:4])
-print(texto[3:])''
+print(texto[3:])
 print(texto[:5])
 
 texto = "carro"
@@ -624,7 +624,7 @@ print(string)
 # ela possui uma vogal.
 
 texto = input("Digite uma palavra: ")
-possui_vogal = ("a" in texto) or ("e" in texto) or ("i" in texto) or ("o" in texto)  or   ("u" in texto) 
+possui_vogal = ("a" in texto) or ("e" in texto) or ("i" in texto) or ("o" in texto) or ("u" in texto)
 print("Possui vogal? ", possui_vogal)
 
 # 4 - Faça um programa que insira a palavra 'ABC' na primeira posição 
@@ -633,4 +633,3 @@ print("Possui vogal? ", possui_vogal)
 texto = input("Digite uma palavra: ")
 texto = "ABC" + texto[0:]
 print(texto)
-

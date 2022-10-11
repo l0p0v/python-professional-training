@@ -11,16 +11,17 @@ www.eia.ai
 """
 
 from primo import primo
+
 print(primo(7))
 print(primo(8))
 
-!pytest -v
+!pytest - v
 
 from primo import primo
+
 print(primo(2))
 print(primo(-1))
 print(primo(7))
 print(primo(8))
 
-!pytest -v
-
+!pytest - v

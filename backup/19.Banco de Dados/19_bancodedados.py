@@ -9,12 +9,14 @@ www.eia.ai
 """
 
 import psycopg2
+
 con = psycopg2.connect(host='database-1.cuf8rlopzxtf.us-east-1.rds.amazonaws.com', database='postgres',
                        user='postgres', password='12345678')
 cur = con.cursor()
 con.close()
 
 import psycopg2
+
 con = psycopg2.connect(host='database-1.cuf8rlopzxtf.us-east-1.rds.amazonaws.com', database='postgres',
                        user='postgres', password='12345678')
 con.autocommit = True
@@ -24,6 +26,7 @@ con.commit()
 con.close()
 
 import psycopg2
+
 con = psycopg2.connect(host='database-1.cuf8rlopzxtf.us-east-1.rds.amazonaws.com', database='inventario',
                        user='postgres', password='12345678')
 con.autocommit = True
@@ -33,29 +36,31 @@ con.commit()
 con.close()
 
 import psycopg2
+
 con = psycopg2.connect(host='database-1.cuf8rlopzxtf.us-east-1.rds.amazonaws.com', database='inventario',
                        user='postgres', password='12345678')
 con.autocommit = True
 cur = con.cursor()
-cur.execute("insert into arquivos (idarquivo, nomearquivo) values (123, 'teste.jpg')" )
+cur.execute("insert into arquivos (idarquivo, nomearquivo) values (123, 'teste.jpg')")
 
 import psycopg2
+
 con = psycopg2.connect(host='database-1.cuf8rlopzxtf.us-east-1.rds.amazonaws.com', database='inventario',
                        user='postgres', password='12345678')
 con.autocommit = True
 cur = con.cursor()
-cur.execute("select * from arquivos" )
+cur.execute("select * from arquivos")
 recset = cur.fetchall()
 for rec in recset:
-  print(rec)
+    print(rec)
 con.close()
 
 import psycopg2
+
 con = psycopg2.connect(host='database-1.cuf8rlopzxtf.us-east-1.rds.amazonaws.com', database='inventario',
                        user='postgres', password='12345678')
 con.autocommit = True
 cur = con.cursor()
-cur.execute("delete from arquivos" )
+cur.execute("delete from arquivos")
 con.commit()
 con.close()
-
